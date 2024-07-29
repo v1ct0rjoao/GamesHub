@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "loja": {
+    "loja-games": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/loja",
+            "outputPath": "dist/loja-games",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "loja:build:production"
+              "browserTarget": "loja-games:build:production"
             },
             "development": {
-              "browserTarget": "loja:build:development"
+              "browserTarget": "loja-games:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "loja:build"
+            "browserTarget": "loja-games:build"
           }
         },
         "test": {
@@ -99,8 +99,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "5f89a06c-6722-4aff-9a7f-15d774d97295"
   }
 }
